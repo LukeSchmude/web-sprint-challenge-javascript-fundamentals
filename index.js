@@ -29,10 +29,12 @@ myFunction();
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
 function summation(number) {
-  for(let i = 0; i = 0; i++)
-   number[i] = number[i] +1
-  }
- console.log(summation(4))
+  return number
+}
+
+console.log(summation(4))
+
+
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
 // Given this zoo data from around the United States, follow the instructions below. Use the specific array methods in the requests below to solve the problems.
@@ -116,7 +118,7 @@ const zooAnimals = [
 
   function consume(a, b, cb){
     cb = a + b
-    return cb
+    return cb 
   }
 
   
@@ -139,18 +141,17 @@ function multiply(a, b, consumecb){
 
  // 🦁🦁🦁 Use greeting to accept a first and last name and return "Hello {first-name} {last-name}, nice to meet you!" 🦁🦁🦁
   
-function greeting(a, b, consumecb){
-  a= '',
-  b= ''
-  consumecb ="Hello" + `${firstname}` + " " + `${lastname}` +", nice to meet you!"
-   return consumecb
+function greeting(firstName, lastName) {
+  firstName.toString()
+  lastName.toString()
+   return "Hello" + firstName + " " + lastName +", nice to meet you!";
   }
   
   
   // 🦁🦁🦁 Step 3: Check your work by un-commenting the following calls to consume(): 🦁🦁🦁 
   // ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️
-  console.log(consume(2, 2, add)); // 4
-  console.log(consume(10, 16, multiply)); // 160
+  // console.log(consume(2, 2, add)); // 4
+  // console.log(consume(10, 16, multiply)); // 160
   console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
 
 // 🐴🐴🐴 Topic 3: Prototypes 🐴🐴🐴 //
@@ -202,8 +203,8 @@ const cuboid = new CuboidMaker({
 
 // 🐴🐴🐴 Test your volume and surfaceArea methods by uncommenting the logs below: 🐴🐴🐴
 // ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️
-console.log(cuboid.volume()); // 100
-console.log(cuboid.surfaceArea()); // 130
+// console.log(cuboid.volume()); // 100
+// console.log(cuboid.surfaceArea()); // 130
  
 
 // 🦄🦄🦄 Topic 4: Classes 🦄🦄🦄 //
@@ -231,8 +232,8 @@ const cuboidTwo = new CuboidMakerTwo({
 });
 
 //🦄🦄🦄 Test your volume and surfaceArea methods by uncommenting the logs below: 🦄🦄🦄
-console.log(cuboidTwo.volume()); // 100
-console.log(cuboidTwo.surfaceArea()); // 130
+// console.log(cuboidTwo.volume()); // 100
+// console.log(cuboidTwo.surfaceArea()); // 130
 
 
 
